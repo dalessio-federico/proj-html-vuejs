@@ -7,6 +7,7 @@
 /* generiche */
 body {
     font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
 /* da cancellare */
 .prova {
     width: 200px;
-    height: 200px;
+    height: 170px;
     background-color: white;
 }
 /* da cancellare */
@@ -53,9 +54,9 @@ header {
 /* inizio sottosezione due */
 .about_work {
     height: 125vh;
-    width: 108%;
+    width: 117%;
     z-index: 1;
-    margin-left: -4%;
+    margin-left: -8%;
     margin-bottom: -7%;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
@@ -71,9 +72,9 @@ header {
 /* inizio sottosezione tre */
 .work_prew_title {
     height: 56vh;
-    width: 110%;
+    width: 117%;
     z-index: 2;
-    margin-left: -4%;
+    margin-left: -8%;
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
     background: #97c376;
@@ -81,7 +82,60 @@ header {
 
 .work_prew_title .container {
     transform: rotate(5deg);
-    height: 56%;
+    height: 65%;
 }
 /* fine sottosezione tre */
 /* fine prima sezione*/
+
+/* inizio seconda sezione */
+/* inizio generiche seconda sezione */
+.work_prew {
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* da cancellare */
+    background-color: #97c376;
+    /* da cancellare */
+}
+/* fine generiche seconda sezione */
+
+/* inizio sottosezione uno */
+.work_img {
+    width: 100%;
+    height: 285vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* impostazioni img_contianer */
+.img_container {
+    height: 95vh;
+    width: 50%;
+    /* da cancellare */
+    background-color: white;
+    /* da cancellare */
+}
+/* fine impostazioni img_contianer */
+/* fine sottosezione uno */
+
+/* inizio sottosezione due */
+.button_container {
+    width: 100%;
+    height: 15vh;
+}
+
+.button_container button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #f9245c;
+    color: white;
+    font-size: 15px;
+} 
+/* fine sottosezione due */
+/* fine seconda sezione */
