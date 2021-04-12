@@ -3,3 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.first_section {
+    height: 226vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #44414d;
+}
+
+.about_me {
+    height: 79vh;
+    width: 100%;
+}
+.about_work {
+    height: 130vh;
+    width: 108%;
+    z-index: 1;
+    margin-left: -4%;
+    margin-bottom: -7%;
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+    background: #191d26;
+}
+
+.work_prew_title {
+    height: 56vh;
+    width: 110%;
+    z-index: 2;
+    margin-left: -7%;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    background: #97c376;
+}

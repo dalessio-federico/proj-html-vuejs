@@ -2,6 +2,9 @@ Vue.config.devtools = true;
 
 var app = new Vue(
 {
-    el : "#root",
-    
+    el : "#app",
+
+    mounted(){
+        console.log("hello")
+    }
 })
