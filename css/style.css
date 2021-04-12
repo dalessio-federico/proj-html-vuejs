@@ -200,3 +200,31 @@ header {
 /* fine impostazione contenitore advice */
 /* fine sottosezione due */
 /* fine quarta sezione */
+
+/* inizio quinta sezione */
+.contact_us {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+}
+
+/* inizio sottosezione uno */
+.contact_form {
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+}
+/* fine sottosezione uno */
+/* fine quinta sezione */
+
+/* inizio impostazioni footer */
+footer {
+    height: 25vh;
+    width: 100%;
+    background-color: #191d26 ;
+}
+/* fine impostazioni footer */
