@@ -4,25 +4,55 @@
     box-sizing: border-box;
 }
 
+/* generiche */
+body {
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* da cancellare */
+.prova {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+/* da cancellare */
+/* fine generiche */
+
+/* Inizio Impostazioni Header */
 header {
     height: 100vh;
     width: 100%;
     background-color: black;
 }
+/* fine impostazioni header */
 
+/* Impostazioni prima sezione */
+/* inizio generiche prima sezione */
 .first_section {
     height: 226vh;
     width: 100%;
     overflow: hidden;
     background-color: #44414d;
 }
+/* fine generiche prima sezione */
 
+/* inizio sottosezione uno */
 .about_me {
     height: 79vh;
     width: 100%;
 }
+/* fine sottosezione uno */
+
+/* inizio sottosezione due */
 .about_work {
-    height: 130vh;
+    height: 125vh;
     width: 108%;
     z-index: 1;
     margin-left: -4%;
@@ -32,12 +62,26 @@ header {
     background: #191d26;
 }
 
+.about_work .container {
+    height: 88%;
+    transform: rotate(-3deg);
+}
+/* fine sottosezione due */
+
+/* inizio sottosezione tre */
 .work_prew_title {
     height: 56vh;
     width: 110%;
     z-index: 2;
-    margin-left: -7%;
+    margin-left: -4%;
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
     background: #97c376;
 }
+
+.work_prew_title .container {
+    transform: rotate(5deg);
+    height: 56%;
+}
+/* fine sottosezione tre */
+/* fine prima sezione*/
