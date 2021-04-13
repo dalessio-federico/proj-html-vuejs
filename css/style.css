@@ -217,6 +217,11 @@ header {
     flex-wrap: wrap;
 }
 
+.work_img img {
+    height: 100%;
+    width: 100%;
+}
+
 /* impostazioni img_contianer */
 .img_container {
     height: 95vh;
@@ -258,7 +263,9 @@ header {
 .quotes {
     height: 80vh;
     width: 100%;
-    background-color: lightgray;
+    background-image: url(../img/testimonial_bkgd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /* fine terza sezione */
 
