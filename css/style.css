@@ -335,36 +335,16 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-}
-
-.imghover_top {
-    width: 100%;
-    height: 75%;
-    background-color: #f9245c;
     opacity: 0.8;
     text-align: center;
-}
-.imghover_top p {
-    color: white;
-    line-height: 483px;
-    font-size: 25px;
-    opacity: 1;
+    background-color: #f9245c;
 }
 
-.imghover_bottom {
-    height: 25%;
-    width: 100%;
-    padding: 10px;
-    background-color: black;
-}
-.imghover_bottom h4 {
-    color: #f9245b;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.imghover_bottom p {
-    color: #687794;
-    font-size: 15px;
+.img_hover p {
+    color: white;
+    line-height: 95vh;
+    font-size: 25px;
+    opacity: 1;
 }
 
 .img_container:hover
@@ -407,9 +387,49 @@ header {
 .quotes {
     height: 80vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-image: url(../img/testimonial_bkgd.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.quotes_top {
+    text-align: center;
+    width: 50%;
+}
+.quotes .quotes_top h2 {
+    color: #f9255b;
+    font-size: 190px;
+    height: 170px;
+}
+.quotes .quotes_top p {
+    color: white;
+    margin-bottom: 20px;
+}
+.quotes_top .strong {
+    color: white;
+    font-size: 15px;
+}
+
+.quotes_bottom {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 25px;
+}
+.quotes_bottom p{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+.company_folder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 /* fine terza sezione */
 
@@ -418,9 +438,14 @@ header {
 .display_title {
     height: 60vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     overflow: hidden;
-    background-color: black;
+    background-color: #4c629e;
+    color: white;
 }
 
 .display_title:after {
@@ -430,11 +455,23 @@ header {
     width:110%;
     position: absolute;
     z-index: 1;
-    bottom: -40%;
+    bottom: 67%;
     margin-left: -4%;
-    -webkit-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-    background: #4c629e;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    background: black;
+}
+
+.display_title h2 {
+    font-size: 35px;
+    margin: 140px 0 20px 0;
+}
+.display_title p {
+    margin-bottom: 20px;
+}
+
+.display_title .linea {
+    margin-left: 0;
 }
 /* fine sottosezione uno */
 
@@ -450,8 +487,58 @@ header {
 
 /* impostazioni contenitore advice */
 .advice {
+    position: relative;
     height: 100%;
     width: 34%;
+}
+
+.adviceimg {
+    height: 75%;
+    width: 100%;
+}
+
+.adviceimg img {
+    height: 100%;
+    width: 100%;
+}
+
+.advice:hover
+.advicehover {
+    display: block;
+}
+
+.advicehover {
+    display: none;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    text-align: center;
+    background-color: #f9245c;
+}
+.advicehover p {
+    color: white;
+    line-height: 360px;
+    font-size: 25px;
+    opacity: 1;
+}
+
+.advice_bottom {
+    height: 25%;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+}
+.advice_bottom h4 {
+    color: #f9245b;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.advice_bottom p {
+    color: #687794;
+    font-size: 15px;
 }
 /* fine impostazione contenitore advice */
 /* fine sottosezione due */
@@ -469,12 +556,91 @@ header {
 }
 
 /* inizio sottosezione uno */
-.contact_form {
-    height: 100px;
-    width: 100px;
-    background-color: grey;
+.contactus_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact_us h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.contactus_info h4 {
+    opacity: 0.9;
+    color: #414141;
+    margin-bottom: 20px;
+}
+.contactus_info .linea {
+    margin-left: 0;
+    margin-bottom: 25px;
+    border-color: #414141;
+    background-color: #414141;
+}
+.contactus_info p {
+    width: 50%;
+    margin-bottom: 35px;
 }
 /* fine sottosezione uno */
+
+/* inizio sottosezione due */
+.contact_form {
+    height: 53vh;
+    width: 50%;
+}
+
+.contact_form form {
+    position: relative;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_form input {
+    height: 58px;
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+}
+.contact_form input:focus {
+    outline: none;
+}
+
+.contact_form .input_icon {
+    position: absolute;
+    right: 8px;
+    top: 30px;
+    color: #b0b0b0;
+    font-size: 23px;
+}
+
+.contact_form a button{
+    width: 100%;
+    height: 58px;
+    border: none;
+    background-color: #f9245c;
+    color: white;
+    font-size: 15px;
+} 
+.contact_form a button:focus {
+    outline: none;
+}
+.contact_form a button:hover {
+    background-color: white;
+    color:#f9245c ;
+}
+
+.contact_form a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+/* fine sottosezione due */
 /* fine quinta sezione */
 
 /* inizio impostazioni footer */
