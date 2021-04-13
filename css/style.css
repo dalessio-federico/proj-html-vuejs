@@ -7,7 +7,7 @@
 /* generiche */
 body {
     font-size: 14px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Commissioner', sans-serif;
 }
 
 .container {
@@ -27,11 +27,74 @@ body {
 /* fine generiche */
 
 /* Inizio Impostazioni Header */
+/* impostazioi header generiche */
 header {
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-image: url(../img/banner_images);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+/* fine generiche */
+
+/* Inizio impostazioni header_menu */
+/* generiche header_menu */
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+}
+/* fine generiche */
+
+/* impostazioni logo */
+.logo {
+    color: white;
+    font-size: 18px;
+}
+/* fine impostazioni logo */
+
+/* impostazioni menu */
+.menu ul {
+    list-style: none;
+    color: white;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a {
+    color: white;
+}
+/* fine impostazioni menu */
+/* fine impostazioni header_menu */
+
+/* inizio impostazioni Header_content */
+.header_content {
+    height: 87vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_content h1 {
+    font-size: 100px;
+    color: #f9255b;
+}
+
+.header_content h4 {
+    font-size: 20px;
+    color: white;
+}
+
+.header_content p {
+    font-size: 14px;
+    color: #687794;
+}
+/* fine impostazioni Header_content */
 /* fine impostazioni header */
 
 /* Impostazioni prima sezione */
@@ -48,7 +111,49 @@ header {
 .about_me {
     height: 79vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+/* inizio info aboutme_top */
+.about_me_top {
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.about_me_top h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.about_me_top p {
+    color: #687794;
+    margin-bottom: 10px;
+}
+
+.linea {
+    width: 100px;
+    border: 1px solid white;
+    background-color: white;
+    margin-left: 12%;
+}
+/* fine info aboutme_top */
+
+/* inizio aboutme_bottom */
+.about_me_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about_me_content {
+    width: 30%;
+    margin-left: 35px;
+    color: #687794 ;
+    text-align: start;
+}
+/* fine aboutme_bottom */
 /* fine sottosezione uno */
 
 /* inizio sottosezione due */
@@ -184,7 +289,7 @@ header {
 
 /* inizio sottosezione due */
 .display_advice {
-    height: 65vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     justify-content: flex-start;
