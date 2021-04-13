@@ -200,9 +200,6 @@ header {
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    /* da cancellare */
-    background-color: #97c376;
-    /* da cancellare */
 }
 /* fine generiche seconda sezione */
 
@@ -217,18 +214,59 @@ header {
     flex-wrap: wrap;
 }
 
+/* impostazioni img_contianer */
+.img_container {
+    position: relative;
+    height: 95vh;
+    width: 50%;
+}
 .work_img img {
     height: 100%;
     width: 100%;
 }
 
-/* impostazioni img_contianer */
-.img_container {
+.img_hover {
+    display: none;
+    position: absolute;
     height: 95vh;
-    width: 50%;
-    /* da cancellare */
-    background-color: white;
-    /* da cancellare */
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.imghover_top {
+    width: 100%;
+    height: 75%;
+    background-color: #f9245c;
+    opacity: 0.8;
+    text-align: center;
+}
+.imghover_top p {
+    color: white;
+    line-height: 483px;
+    font-size: 25px;
+    opacity: 1;
+}
+
+.imghover_bottom {
+    height: 25%;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+}
+.imghover_bottom h4 {
+    color: #f9245b;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.imghover_bottom p {
+    color: #687794;
+    font-size: 15px;
+}
+
+.img_container:hover
+.img_hover {
+    display: block;
 }
 /* fine impostazioni img_contianer */
 /* fine sottosezione uno */
@@ -247,9 +285,12 @@ header {
     color: white;
     font-size: 15px;
 } 
-
 .button_container a button:focus {
     outline: none;
+}
+.button_container a button:hover {
+    background-color: white;
+    color:#f9245c ;
 }
 
 .button_container a {
