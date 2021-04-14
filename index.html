@@ -19,11 +19,10 @@
         <!-- Inizio Header -->
         <header>
             <div class="header_menu">
-                <div class="logo">PROVA</div>
+                <div class="logo"><img :src="header.logo" alt=""></div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">Prova</a></li>
-                        <li><a href="#">Prova</a></li>
+                        <li v-for="e in header.leftMenu"><a href="#"><i :class="e"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -246,21 +245,19 @@
         <!-- Inizio Footer -->
         <footer>
             <div class="logo_footer">
-                <h2>PROVA</h2>
+                <img :src="footer.logo" alt="">
             </div>
             <div class="credits">
                 <ul>
-                    <li><a href="#">prova</a></li>
-                    <li><a href="#">prova</a></li>
-                    <li><a href="#">prova</a></li>
+                    <li v-for="(e,index) in footer.credits"><a href="#">{{e}}
+                        <span v-if="index == 1">Theme Fusion</span>
+                        <span v-if="index == 3">WordPress</span>
+                    </a></li>
                 </ul>
             </div>
             <div class="social_media">
                 <ul>
-                    <li><a href="#">prova</a></li>
-                    <li><a href="#">prova</a></li>
-                    <li><a href="#">prova</a></li>
-                    <li><a href="#">prova</a></li>
+                    <li v-for="e in footer.socialMedia"><a href="#"><i :class="e"></i></a></li>
                 </ul>
             </div>
         </footer>

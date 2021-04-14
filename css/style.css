@@ -41,9 +41,9 @@ header {
 /* fine generiche */
 
 /* impostazioni logo */
-.logo {
-    color: white;
-    font-size: 18px;
+.logo img {
+    width: 50%;
+    height: 6vh;
 }
 /* fine impostazioni logo */
 
@@ -55,10 +55,12 @@ header {
 
 .menu ul li {
     display: inline-block;
+    margin-left: 35px;
 }
 .menu ul li a {
     color: white;
     text-decoration: none;
+    font-size: 25px;
 }
 /* fine impostazioni menu */
 /* fine impostazioni header_menu */
@@ -672,7 +674,15 @@ footer {
 }
 
 .logo_footer {
-    color: white;
+    margin-bottom: 25px;
+}
+
+.logo_footer img {
+    height: 7vh;
+}
+
+.credits {
+    margin-bottom: 25px;
 }
 
 .credits ul {
@@ -693,6 +703,11 @@ footer {
     text-decoration: none;
 }
 
+.credits ul li a span {
+    color: white;
+    font-weight: bold;
+}
+
 .social_media ul {
     list-style: none;
 }
@@ -705,5 +720,6 @@ footer {
 .social_media ul li a {
     color: white;
     text-decoration: none;
+    font-size: 30px;
 }
 /* fine impostazioni footer */
